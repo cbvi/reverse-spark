@@ -5,7 +5,7 @@ project Default is
    for Main use ("main.adb");
 
    package Compiler is
-      for Switches ("ada") use ("-gnata");
+      for Switches ("ada") use ("-gnata", "-gnatwa", "-gnatVa", "-gnatyg");
    end Compiler;
 
    package Ide is

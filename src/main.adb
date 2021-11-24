@@ -1,5 +1,4 @@
 with Ada.Text_IO;
-with Ada.Characters.Latin_1; use Ada.Characters.Latin_1;
 
 procedure Main with SPARK_Mode is
 
@@ -34,8 +33,7 @@ procedure Main with SPARK_Mode is
       return Result;
    end Reverse_Func;
 
-   Original_Buffer : constant String := "hello world";
-   New_Buffer : String := Reverse_Func (Original_Buffer);
+   New_Buffer : constant String := Reverse_Func ("Hello world");
 begin
    Ada.Text_IO.Put_Line (New_Buffer);
 end Main;
